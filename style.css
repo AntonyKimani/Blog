@@ -437,71 +437,83 @@ font-size:36px;
     }
 }
 @media(max-width:375px){
+    html{
+        overflow-x:hidden;
+    }
+    body{
+        overflow-x: hidden;
+    }
     .nav-menu{
         display:none;
     }
     .name{
-        font-size:48px;
+        font-size:24px;
         justify-content:flex-end;
         position:relative;
-        left:3em;
+        left:-4em;
     }
     .home h1{
         justify-content:flex-end;
         position:relative;
-        width:150%;
-        left:2em;
+        width:100%;
+        left:0em;
+        font-size:36px;
+
     }
     .home h3{
         position:relative;
-        left:5em;
+        left:0em;
     }
     .btn{
         font-size:24px;
-        left:12em;
+        left:4em;
     }
     .intro{
-        width:200%;
+        width:100%;
         height:80vh;
     }
     #message-img{
-        bottom:10em;
-        left:-17em;
+        bottom:13em;
+        left:0em;
+        height:auto;
+        width:40%
     }
     .intro h1{
-        left:3em;
+        top:2.5em;
+        left:1em;
         font-size:55px;
     }
     .intro a{
         position:relative ;
-        top:-1em;
-        left:7em;
-        font-size:30px;
+        top:16em;
+        left:1em;
+        font-size:26px;
     }
-    .intro img{
-        height:70vh;
+    #developer-img{
+        height:30vh;
         position:relative;
-        left:22em;
+        top:0em;
+        left:9em;
     }
     .articles{
         position:relative;
-        top:20em;
+        top:10em;
     }
     .articles h1{
         font-size:55px;
         position:relative;
-        left:4em;
+        left:0em;
     }
     .articles h3{
         position:relative;
-        left:2em;
-        width:150%
+        left:0em;
+        width:100%
     }
     .blog{
         box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
-        width:180%;
+        width:95%;
         position:relative ;
-        left:3em;
+        left:.5em;
         display:grid;
         grid-template-columns:100%;
     }
@@ -550,16 +562,16 @@ font-size:36px;
         .blog-footer h4{
         padding-left:9em;
         position:relative;
-        left:10em;
+        left:0em;
         }
         .newsletter{
         position:relative;
         top:25em;
-        left:10em;
+        left:6em;
         }
         .newsletter h1{
         color:blue;
-        width:110%;
+        width:100%;
         font-size:48px;
         display:flex;
         justify-content:center ;
@@ -567,7 +579,7 @@ font-size:36px;
         .newsletter h3{
         position:relative;
         right:3em;
-        width:150%;
+        width:100%;
         font-size:36px;
         display:flex;
         justify-content:center;
@@ -580,7 +592,7 @@ font-size:36px;
         background-color:#f0f0f5;
         border:none;
         position:relative ;
-        left:4em;
+        left:-2em;
         font-size:24px;
         height:2em;
         width:60%;
@@ -598,13 +610,13 @@ font-size:36px;
         font-weight:500;
         text-transform:uppercase ;
         position:relative ;
-        left:4em;
+        left:-2em;
         padding-top:10px;
         }
         .footer{
         position:relative ;
         top:40em;
-        width:200%;
+        width:100%;
         background-color:#b3e6ff;
         height:70vh;
         }
