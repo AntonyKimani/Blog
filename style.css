@@ -646,3 +646,52 @@ font-size:36px;
         font-size:16px;
     }
 }
+@media(max-width:305px){
+    .intro{
+        width:100%;
+        height:90vh;
+    }
+    #message-img{
+        bottom:8em;
+        left:1em;
+        height:auto;
+        width:40%
+    }
+    .intro h1{
+        top:2.5em;
+        left:0em;
+        font-size:45px;
+        width:100%;
+    }
+    .intro a{
+        position:relative ;
+        top:7em;
+        left:.5em;
+        font-size:20px;
+    }
+    #developer-img{
+        height:50vh;
+        width:auto;
+        position:relative;
+        top:2em;
+        left:5em;
+    }
+    .newsletter{
+        left:4em;
+    }
+    .newsletter h1{
+        color:blue;
+        width:90%;
+        left:-2em;
+        font-size:38px;
+    }
+    .newsletter h3{
+        left:-2em;
+    }
+    .email{
+        left:0em;
+    }
+    .btn-2{
+        left:-10em;
+    }
+}
