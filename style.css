@@ -450,70 +450,72 @@ font-size:36px;
         font-size:24px;
         justify-content:flex-end;
         position:relative;
-        left:-8em;
+        left:-4em;
     }
     .home h1{
         justify-content:flex-end;
         position:relative;
-        width:50%;
-        left:0em;
-        font-size:24px;
+        width:80%;
+        left:1em;
+        font-size:32px;
 
     }
     .home h3{
         position:relative;
-        left:-5em;
+        left:-1em;
         font-size:18px;
     }
     .btn{
-        font-size:8px;
+        font-size:12px;
         left:7em;
     }
     .intro{
-        width:60%;
-        height:60vh;
+        width:100%;
+        height:90vh;
     }
     #message-img{
         bottom:8em;
-        left:1em;
+        left:-10em;
         height:auto;
         width:40%
     }
     .intro h1{
         top:2.5em;
-        left:1em;
-        font-size:30px;
+        left:0em;
+        font-size:45px;
+        width:100%;
     }
     .intro a{
         position:relative ;
-        top:18em;
-        left:2em;
-        font-size:15px;
+        top:6em;
+        left:.5em;
+        font-size:20px;
     }
     #developer-img{
-        height:20vh;
+        height:50vh;
+        width:auto;
         position:relative;
-        top:0em;
-        left:3em;
+        top:2em;
+        left:10em;
     }
     .articles{
         position:relative;
         top:10em;
     }
     .articles h1{
-        font-size:25px;
+        font-size:35px;
         position:relative;
-        left:-3em;
+        left:-0em;
     }
     .articles h3{
         position:relative;
-        font-size:18px;
+        font-size:20px;
         left:0em;
-        width:50%
+        width:90%
     }
     .blog{
         box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
-        width:55%;
+        width:95%;
         position:relative ;
         left:.5em;
         display:grid;
@@ -527,7 +529,7 @@ font-size:36px;
     }
     .blog-text{
         position:relative;
-        left:-8em;
+        left:-11em;
     }
         .blog h1{
         text-align:center;
@@ -540,16 +542,16 @@ font-size:36px;
         padding-top:.5em;
         padding-bottom:.5em;
         position:relative;
-        left:7em;
+        left:9em;
         width:95%;
-        top:2em;
+        top:4em;
         }
         .blog-footer{
         display:flex;
         flex-direction:row;
         width:100%;
         position:relative;
-        left:8em;
+        left:12em;
         top:5em;
         }
         .blog-footer img{
@@ -575,15 +577,15 @@ font-size:36px;
         }
         .newsletter h1{
         color:blue;
-        width:50%;
+        width:100%;
         left:-5em;
-        font-size:18px;
+        font-size:38px;
         }
         .newsletter h3{
         position:relative;
-        right:0em;
-        width:60%;
-        font-size:16px;
+        right:-1em;
+        width:90%;
+        font-size:22px;
         display:flex;
         justify-content:center;
         text-align:center;
@@ -595,7 +597,7 @@ font-size:36px;
         background-color:#f0f0f5;
         border:none;
         position:relative ;
-        left:1.5em;
+        left:5.5em;
         font-size:14px;
         height:1em;
         width:40%;
@@ -613,15 +615,15 @@ font-size:36px;
         font-weight:500;
         text-transform:uppercase ;
         position:relative ;
-        left:-11em;
+        left:-6em;
         padding-top:10px;
         }
         .footer{
         position:relative ;
         top:30em;
-        width:60%;
+        width:100%;
         background-color:#b3e6ff;
-        height:40vh;
+        height:50vh;
         }
         .footer h2{
         font-size:28px;
@@ -636,7 +638,7 @@ font-size:36px;
         .footer-icons a{
         text-decoration:none;
         color:black;
-        font-size:16px;
+        font-size:20px;
         }
         .footer p{
         width:100%;
