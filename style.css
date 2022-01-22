@@ -962,10 +962,13 @@ font-size:36px;
 }
 @media(max-width:320px){
     .name{
-        left:-5em;
+        left:-3em;
     }
     .home h1{
-        left:-12px;
+        left:1em;
+    }
+    .home h3{
+        left:-10px;
     }
     .intro{
         width:100%;
@@ -1004,8 +1007,8 @@ font-size:36px;
         width:70%;
     }
     .blog{
-        height:60vh;
-        width:72%;
+        height:70vh;
+        width:90%;
         position:relative;
         left:15px;
     }
@@ -1037,7 +1040,7 @@ font-size:36px;
         left:-10em;
     }
     .footer{
-        width:80%;
+        width:100%;
     }
 }
 @media(max-width:295px){
