@@ -72,6 +72,12 @@ left:8em;
     background-color: #0040ff;
     cursor:pointer;
 }
+.btn a{
+    color:white;
+    font-weight:500;
+    text-transform:uppercase ;
+    text-decoration:none;
+}
 .intro{
 background-color:#f0f0f5;
 height:40vh;
