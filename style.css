@@ -450,19 +450,19 @@ font-size:36px;
         font-size:24px;
         justify-content:flex-end;
         position:relative;
-        left:-4em;
+        left:-6em;
     }
     .home h1{
         justify-content:flex-end;
         position:relative;
-        width:80%;
-        left:1em;
+        width:70%;
+        left:0em;
         font-size:32px;
 
     }
     .home h3{
         position:relative;
-        left:-1em;
+        left:-3em;
         font-size:18px;
     }
     .btn{
@@ -476,18 +476,19 @@ font-size:36px;
     #message-img{
         bottom:8em;
         left:-10em;
+        display:none;
         height:auto;
         width:40%
     }
     .intro h1{
-        top:2.5em;
+        top:em;
         left:0em;
         font-size:45px;
-        width:100%;
+        width:80%;
     }
     .intro a{
         position:relative ;
-        top:6em;
+        top:4em;
         left:.5em;
         font-size:20px;
     }
@@ -495,8 +496,8 @@ font-size:36px;
         height:30vh;
         width:auto;
         position:relative;
-        top:2em;
-        left:10em;
+        top:4em;
+        left:8em;
     }
     .articles{
         position:relative;
@@ -505,17 +506,17 @@ font-size:36px;
     .articles h1{
         font-size:35px;
         position:relative;
-        left:-0em;
+        left:-1em;
     }
     .articles h3{
         position:relative;
         font-size:20px;
         left:0em;
-        width:90%
+        width:70%
     }
     .blog{
         box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
-        width:95%;
+        width:75%;
         position:relative ;
         left:.5em;
         display:grid;
@@ -533,16 +534,18 @@ font-size:36px;
     }
         .blog h1{
         text-align:center;
-        width:100%;
+        width:90%;
+        font-size:25px;
         position:relative;
         top:3em;
-        left:5em;
+        left:8em;
     }
         .blog h3{
         padding-top:.5em;
         padding-bottom:.5em;
         position:relative;
         left:9em;
+        display:none;
         width:95%;
         top:4em;
         }
@@ -577,15 +580,228 @@ font-size:36px;
         }
         .newsletter h1{
         color:blue;
-        width:100%;
+        width:70%;
         left:-5em;
-        font-size:38px;
+        font-size:28px;
         }
         .newsletter h3{
         position:relative;
         right:-1em;
+        width:70%;
+        font-size:18px;
+        display:flex;
+        justify-content:center;
+        text-align:center;
+        padding-top:3em;
+        font-weight:400;
+        }
+        .email{
+        padding:10px 20px;
+        background-color:#f0f0f5;
+        border:none;
+        position:relative ;
+        left:5.5em;
+        font-size:14px;
+        height:1em;
+        width:40%;
+        top:5em;
+        padding-top:10px;
+        }
+        .btn-2{
+        border:none;
+        background-color:blue;
+        padding:10px 20px;
+        border-radius:4px;
+        color:white;
+        top:9em;
+        font-size:12px;
+        font-weight:500;
+        text-transform:uppercase ;
+        position:relative ;
+        left:-6em;
+        padding-top:10px;
+        }
+        .footer{
+        position:relative ;
+        top:30em;
+        width:80%;
+        background-color:#b3e6ff;
+        height:50vh;
+        }
+        .footer h2{
+        font-size:28px;
+        padding:20px;
+        color:blue;
+        }
+        .footer-icons{
+        display:grid;
+        row-gap:.5em;
+        padding:10px;
+        }
+        .footer-icons a{
+        text-decoration:none;
+        color:black;
+        font-size:20px;
+        }
+        .footer p{
+        width:100%;
+        padding:10px;
+        font-size:16px;
+    }
+}
+@media(max-width:360px){
+    html{
+        overflow-x: hidden;
+    }
+    body{
+        overflow-x: hidden;
+    }
+    .nav-menu{
+        display:none;
+    }
+    .name{
+        font-size:24px;
+        justify-content:flex-end;
+        position:relative;
+        left:-6em;
+    }
+    .home h1{
+        justify-content:flex-end;
+        position:relative;
+        width:70%;
+        left:0em;
+        font-size:32px;
+
+    }
+    .home h3{
+        position:relative;
+        left:-3em;
+        font-size:18px;
+    }
+    .btn{
+        font-size:12px;
+        left:7em;
+    }
+    .intro{
+        width:100%;
+        height:60vh;
+    }
+    #message-img{
+        bottom:8em;
+        left:-10em;
+        display:none;
+        height:auto;
+        width:40%
+    }
+    .intro h1{
+        top:em;
+        left:0em;
+        font-size:45px;
+        width:80%;
+    }
+    .intro a{
+        position:relative ;
+        top:4em;
+        left:.5em;
+        font-size:20px;
+    }
+    #developer-img{
+        height:30vh;
+        width:auto;
+        position:relative;
+        top:4em;
+        left:8em;
+    }
+    .articles{
+        position:relative;
+        top:10em;
+    }
+    .articles h1{
+        font-size:35px;
+        position:relative;
+        left:-1em;
+    }
+    .articles h3{
+        position:relative;
+        font-size:20px;
+        left:0em;
+        width:70%
+    }
+    .blog{
+        box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+        width:95%;
+        position:relative ;
+        left:.5em;
+        display:grid;
+        grid-template-columns:100%;
+    }
+    .blog img{
+        width:100%;
+    }
+    .blog-img img{
+        width:100%;
+    }
+    .blog-text{
+        position:relative;
+        left:-11em;
+    }
+        .blog h1{
+        text-align:center;
         width:90%;
-        font-size:22px;
+        font-size:25px;
+        position:relative;
+        top:3em;
+        left:8em;
+    }
+        .blog h3{
+        padding-top:.5em;
+        padding-bottom:.5em;
+        position:relative;
+        left:9em;
+        display:none;
+        width:95%;
+        top:4em;
+        }
+        .blog-footer{
+        display:flex;
+        flex-direction:row;
+        width:100%;
+        position:relative;
+        left:12em;
+        top:5em;
+        }
+        .blog-footer img{
+        width:10%;
+        height:10%;
+        padding-left:5px;
+        padding-bottom:5px;
+        }
+        .blog-footer p{
+        padding-left:1em;
+        font-size:15px;
+        }
+        .blog-footer h4{
+        padding-left:9em;
+        position:relative;
+        left:-5em;
+        width:100%;
+        }
+        .newsletter{
+        position:relative;
+        top:15em;
+        left:0em;
+        }
+        .newsletter h1{
+        color:blue;
+        width:70%;
+        left:-5em;
+        font-size:28px;
+        }
+        .newsletter h3{
+        position:relative;
+        right:-1em;
+        width:70%;
+        font-size:18px;
         display:flex;
         justify-content:center;
         text-align:center;
@@ -745,6 +961,12 @@ font-size:36px;
     }
 }
 @media(max-width:320px){
+    .name{
+        left:-5em;
+    }
+    .home h1{
+        left:-12px;
+    }
     .intro{
         width:100%;
         height:60vh;
@@ -753,19 +975,20 @@ font-size:36px;
         bottom:8em;
         left:0em;
         height:auto;
-        width:40%
+        width:40%;
+        display:none;
     }
     .intro h1{
-        top:2.5em;
+        top:-0em;
         left:0em;
         font-size:45px;
-        width:100%;
+        width:80%;
     }
     .intro a{
         position:relative ;
-        top:7em;
+        top:3em;
         left:.5em;
-        font-size:20px;
+        font-size:16px;
     }
     #developer-img{
         height:30vh;
@@ -774,8 +997,28 @@ font-size:36px;
         top:4em;
         left:5em;
     }
+    .articles h1{
+        left:-1em;
+    }
+    .articles h3{
+        width:70%;
+    }
+    .blog{
+        height:60vh;
+        width:72%;
+        position:relative;
+        left:15px;
+    }
+    .blog-text h1{
+        left:7.3em;
+        font-size:24px;
+    }
+    .blog-text h3{
+        display:none;
+    }
     .newsletter{
         left:4em;
+        top:12em;
     }
     .newsletter h1{
         color:blue;
@@ -785,12 +1028,16 @@ font-size:36px;
     }
     .newsletter h3{
         left:-2em;
+        width:70%;
     }
     .email{
         left:0em;
     }
     .btn-2{
         left:-10em;
+    }
+    .footer{
+        width:80%;
     }
 }
 @media(max-width:295px){
