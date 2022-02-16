@@ -4,19 +4,23 @@ margin:0;
 }
 body{
 scroll-behavior:smooth;
+width:100%;
 }
 .name{
 display:flex;
 justify-content:center ;
 color:blue;
+border:1px solid red;
 }
 .nav-menu{
 display:flex;
 justify-content:flex-end;
+border:1px solid red;
 }
 nav ul{
 display:flex;
 flex-direction:row;
+border:1px solid red;
 }
 nav ul li{
 list-style:none;
@@ -43,10 +47,11 @@ nav ul li a:hover::after{
 color:linear-gradient(to right , red ,blue);
 display:flex;
 justify-content:center;
-width:100%;
+width:90%;
 padding:10px;
 font-size:48px;
 text-align:center ;
+border:1px solid red;
 }
 .home h3{
 display:flex;
@@ -83,11 +88,18 @@ background-color:#f0f0f5;
 height:40vh;
 position:relative ;
 top:5em;
+border:1px solid red;
 }
 .intro img{
     height:50vh;
     position:relative;
     left:40em;
+}
+#developer-img{
+    width:35vw;
+    border:1px solid red;
+    position:relative;
+    left:25em;
 }
 #message-img{
     height:20vh;
@@ -115,6 +127,7 @@ font-weight:500;
 }
 .articles{
 position:relative ;
+border:1px solid red;
 top:10em;
 }
 .articles h1{
@@ -123,6 +136,7 @@ justify-content:center;
 color:blue;
 width:100%;
 font-size:48px;
+border:1px solid red;
 }
 .articles h3{
 font-weight:400;
@@ -132,6 +146,7 @@ text-align:center;
 padding:10px;
 margin-top:2em;
 width:90%;
+border:1px solid red;
 }
 .blog{
 box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
@@ -139,6 +154,7 @@ width:95%;
 position:relative ;
 left:10px;
 display:grid;
+border:1px solid red;
 grid-template-columns:40% 35%;
 }
 .blog img{
@@ -146,17 +162,15 @@ width:100%;
 }
 .blog h1{
 text-align:center;
-width:100%;
+width:170%;
 position:relative;
-top:2em;
-left:5em;
+top:.5em;
 }
 .blog h3{
 padding-top:.5em;
 padding-bottom:.5em;
 position:relative;
-left:7em;
-top:2em;
+width:165%;
 }
 .blog-footer{
 display:flex;
@@ -164,7 +178,7 @@ flex-direction:row;
 width:100%;
 position:relative;
 left:5em;
-top:6em;
+border:1px solid red;
 }
 .blog-footer img{
 width:10%;
@@ -173,16 +187,18 @@ padding-bottom:5px;
 }
 .blog-footer p{
 padding-left:1em;
+border:1px solid red;
 font-size:24px;
 }
 .blog-footer h4{
-padding-left:9em;
+border:1px solid red;
 position:relative;
-left:30em;
+left:25em;
 }
 .newsletter{
 position:relative;
 top:10em;
+border:1px solid red;
 }
 .newsletter h1{
 color:blue;
@@ -210,6 +226,7 @@ height:2em;
 width:50%;
 top:5em;
 padding-top:10px;
+border:1px solid red;
 }
 .btn-2{
 border:none;
@@ -229,6 +246,7 @@ position:relative ;
 top:15em;
 background-color:#b3e6ff;
 height:60vh;
+border:1px solid red;
 }
 .footer h2{
 font-size:48px;
@@ -250,851 +268,199 @@ width:100%;
 padding:10px;
 font-size:36px;
 }
-@media(max-width:1366px){
-    .intro h1{
-        top:0.5em;
+@media(max-width:1440px){
+    body{
+        width:80%;
+    }
+    .nav-menu{
+        width:120%;
+    }
+    .home{
+        width:130%;
+    }
+    .btn{
+        position:relative;
+        left:88em;
     }
     .intro a{
-        top:-5em;
-        left:15em;
+        font-size:24px;
+        border:1px solid red;
     }
-    .intro img{
-        left:25em;
+    .articles{
+        width:120%;
     }
-    #message-img{
-        bottom:10em;
+    .newsletter{
+        width:120%;
     }
-    .blog-text{
-        position:relative;
-        bottom:5em;
-        right:5em;
-    }
-    .blog-footer{
-        top:5em;
-    }
-    .blog-footer h4{
-        left:10em;
+    .footer{
+        width:120%;
     }
 }
-@media(max-width:500px){
-    .nav-menu{
-        display:none;
-    }
-    .name{
-        font-size:48px;
-        justify-content:flex-end;
-    }
-    .home h1{
-        justify-content:flex-end;
-        position:relative;
-        width:100%;
-        left:3em;
-    }
-    .home h3{
-        position:relative;
+@media(max-width:1024px){
+    .btn{
         left:4em;
     }
     .intro{
-        width:150%;
+        width:120%;
     }
     #message-img{
-        bottom:4em;
-        left:-17em;
+        height:12vh;
+        bottom:5em;
+    }
+    #developer-img{
+        height:30vh;
+        width:25vw;
+        position:relative;
+        left:22em;
     }
     .intro h1{
-        left:3em;
+        position:relative;
+        left:4em;
     }
     .intro a{
-        position:relative ;
-        top:-1em;
-        left:7em;
+        position:relative;
+        top:-3em;
+        left:16em;
+    }
+    .blog-footer h4{
+        left:13em;
+    }
+}
+@media(max-width:768px){
+    #message-img{
+        display:none;
+    }
+    .intro h1{
+        position:relative;
+        left:0em;
+    }
+    .intro a{
+        position:relative;
+        top:-5em;
+        left:3em;
+    }
+    #developer-img{
+        height:40vh;
+        width:40vw;
+        position:relative;
+        top:-7em;
+        left:12em;
+    }
+    .blog-footer h4{
+        left:6em;
+    }
+}
+@media(max-width:425px){
+    .name{
+        position:relative;
+        left:2em;
+    }
+    .nav-menu{
+        position:relative;
+        left:15px;
+        z-index:1000;
+    }
+    .btn{
+        left:11em;
+    }
+    .intro h1{
+        border:1px solid red;
+        width:100%;
+        top:0em;
+    }
+    .intro a{
+        top:2em;
+        left:0em;
+    }
+    #developer-img{
+        height:30vh;
+        width:60vw;
+        position:relative;
+        top:-3em;
+        left:12.5em;
+    }
+    .articles h3{
         font-size:30px;
     }
-    .intro img{
-        height:50vh;
-        position:relative;
-        left:27em;
-    }
     .blog{
-        box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
-        width:130%;
-        position:relative ;
-        left:3em;
         display:grid;
-        grid-template-columns:100%;
-    }
-    .blog img{
-        width:100%;
-    }
-    .blog-img img{
-        width:100%;
+        grid-template-columns:90%;
     }
     .blog-text{
-        position:relative;
-        left:-15em;
+        width:90%;
     }
-        .blog h1{
-        text-align:center;
-        width:100%;
-        position:relative;
-        top:2em;
-        left:5em;
+    .blog-text h1{
+        font-size:30px;
+        width:120%;
     }
-        .blog h3{
-        padding-top:.5em;
-        padding-bottom:.5em;
-        position:relative;
-        left:7em;
-        top:2em;
-        }
-        .blog-footer{
-        display:flex;
-        flex-direction:row;
-        width:100%;
-        position:relative;
-        left:16em;
-        top:5em;
-        }
-        .blog-footer img{
-        width:10%;
-        padding-left:5px;
-        padding-bottom:5px;
-        }
-        .blog-footer p{
-        padding-left:1em;
+    .blog-text h3{
         font-size:24px;
-        }
-        .blog-footer h4{
-        padding-left:9em;
+        width:120%;
+    }
+    .newsletter h3{
+        font-size:30px;
+    }
+    .email{
+        left:2em;
+    }
+    .btn-2{
         position:relative;
-        left:10em;
-        }
-        .newsletter{
-        position:relative;
-        top:10em;
-        left:5em;
-        }
-        .newsletter h1{
-        color:blue;
-        width:100%;
-        font-size:48px;
-        display:flex;
-        justify-content:center ;
-        }
-        .newsletter h3{
-        width:100%;
-        font-size:36px;
-        display:flex;
-        justify-content:center;
-        text-align:center;
-        padding-top:3em;
-        font-weight:400;
-        }
-        .email{
-        padding:10px 20px;
-        background-color:#f0f0f5;
-        border:none;
-        position:relative ;
         left:4em;
-        height:2em;
-        width:50%;
-        top:5em;
-        padding-top:10px;
-        }
-        .btn-2{
-        border:none;
-        background-color:blue;
-        padding:10px 20px;
-        border-radius:4px;
-        color:white;
-        top:5em;
-        font-weight:500;
-        text-transform:uppercase ;
-        position:relative ;
-        left:9em;
-        padding-top:10px;
-        }
-        .footer{
-        position:relative ;
-        top:15em;
-        width:150%;
-        background-color:#b3e6ff;
-        height:70vh;
-        }
-        .footer h2{
-        font-size:48px;
-        padding:20px;
-        color:blue;
-        }
-        .footer-icons{
-        display:grid;
-        row-gap:.5em;
-        padding:10px;
-        }
-        .footer-icons a{
-        text-decoration:none;
-        color:black;
-        font-size:36px;
-        }
-        .footer p{
-        width:100%;
-        padding:10px;
-        font-size:36px;
+    }
+    .footer-icons a{
+        font-size:24px;
+    }
+    .footer p{
+        font-size:20px;
     }
 }
 @media(max-width:375px){
-    html{
-        overflow-x: hidden;
-    }
-    body{
-        overflow-x: hidden;
-    }
     .nav-menu{
         display:none;
     }
-    .name{
-        font-size:24px;
-        justify-content:flex-end;
+   nav ul{
+       display:flex;
+       flex-direction:column;
+   }
+   #developer-img{
+    height:30vh;
+    width:70vw;
+    position:relative;
+    top:-3em;
+    left:12.5em;
+    }
+    .blog-footer h4{
+        left:3em;
+    }
+    .email{
+        left:1em;
+    }
+    .btn-2{
         position:relative;
-        left:-6em;
+        left:1em;
     }
-    .home h1{
-        justify-content:flex-end;
-        position:relative;
-        width:70%;
-        left:0em;
-        font-size:32px;
-
-    }
-    .home h3{
-        position:relative;
-        left:-3em;
-        font-size:18px;
-    }
-    .btn{
-        font-size:12px;
-        left:7em;
-    }
-    .intro{
-        width:100%;
-        height:60vh;
-    }
-    #message-img{
-        bottom:8em;
-        left:-10em;
-        display:none;
-        height:auto;
-        width:40%
-    }
-    .intro h1{
-        top:em;
-        left:0em;
-        font-size:45px;
-        width:80%;
-    }
-    .intro a{
-        position:relative ;
-        top:4em;
-        left:.5em;
-        font-size:20px;
-    }
-    #developer-img{
-        height:30vh;
-        width:auto;
-        position:relative;
-        top:4em;
-        left:8em;
-    }
-    .articles{
-        position:relative;
-        top:10em;
-    }
-    .articles h1{
-        font-size:35px;
-        position:relative;
-        left:-1em;
-    }
-    .articles h3{
-        position:relative;
-        font-size:20px;
-        left:0em;
-        width:70%
-    }
-    .blog{
-        box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
-        width:75%;
-        position:relative ;
-        left:.5em;
-        display:grid;
-        grid-template-columns:100%;
-    }
-    .blog img{
-        width:100%;
-    }
-    .blog-img img{
-        width:100%;
-    }
-    .blog-text{
-        position:relative;
-        left:-11em;
-    }
-        .blog h1{
-        text-align:center;
-        width:90%;
-        font-size:25px;
-        position:relative;
-        top:3em;
-        left:8em;
-    }
-        .blog h3{
-        padding-top:.5em;
-        padding-bottom:.5em;
-        position:relative;
-        left:9em;
-        display:none;
-        width:95%;
-        top:4em;
-        }
-        .blog-footer{
-        display:flex;
-        flex-direction:row;
-        width:100%;
-        position:relative;
-        left:12em;
-        top:5em;
-        }
-        .blog-footer img{
-        width:10%;
-        height:10%;
-        padding-left:5px;
-        padding-bottom:5px;
-        }
-        .blog-footer p{
-        padding-left:1em;
-        font-size:15px;
-        }
-        .blog-footer h4{
-        padding-left:9em;
-        position:relative;
-        left:-5em;
-        width:100%;
-        }
-        .newsletter{
-        position:relative;
-        top:15em;
-        left:0em;
-        }
-        .newsletter h1{
-        color:blue;
-        width:70%;
-        left:-5em;
-        font-size:28px;
-        }
-        .newsletter h3{
-        position:relative;
-        right:-1em;
-        width:70%;
-        font-size:18px;
-        display:flex;
-        justify-content:center;
-        text-align:center;
-        padding-top:3em;
-        font-weight:400;
-        }
-        .email{
-        padding:10px 20px;
-        background-color:#f0f0f5;
-        border:none;
-        position:relative ;
-        left:5.5em;
-        font-size:14px;
-        height:1em;
-        width:40%;
-        top:5em;
-        padding-top:10px;
-        }
-        .btn-2{
-        border:none;
-        background-color:blue;
-        padding:10px 20px;
-        border-radius:4px;
-        color:white;
-        top:9em;
-        font-size:12px;
-        font-weight:500;
-        text-transform:uppercase ;
-        position:relative ;
-        left:-6em;
-        padding-top:10px;
-        }
-        .footer{
-        position:relative ;
-        top:30em;
-        width:80%;
-        background-color:#b3e6ff;
-        height:50vh;
-        }
-        .footer h2{
-        font-size:28px;
-        padding:20px;
-        color:blue;
-        }
-        .footer-icons{
-        display:grid;
-        row-gap:.5em;
-        padding:10px;
-        }
-        .footer-icons a{
-        text-decoration:none;
-        color:black;
-        font-size:20px;
-        }
-        .footer p{
-        width:100%;
-        padding:10px;
-        font-size:16px;
+    .newsletter h1{
+        font-size:34px;
     }
 }
 @media(max-width:360px){
-    html{
-        overflow-x: hidden;
-    }
-    body{
-        overflow-x: hidden;
-    }
-    .nav-menu{
-        display:none;
-    }
-    .name{
-        font-size:24px;
-        justify-content:flex-end;
-        position:relative;
-        left:-6em;
-    }
-    .home h1{
-        justify-content:flex-end;
-        position:relative;
-        width:70%;
+    .email{
         left:0em;
-        font-size:32px;
-
     }
-    .home h3{
+    .btn-2{
         position:relative;
-        left:-3em;
-        font-size:18px;
-    }
-    .btn{
-        font-size:12px;
-        left:7em;
-    }
-    .intro{
-        width:100%;
-        height:60vh;
-    }
-    #message-img{
-        bottom:8em;
-        left:-10em;
-        display:none;
-        height:auto;
-        width:40%
-    }
-    .intro h1{
-        top:em;
-        left:0em;
-        font-size:45px;
-        width:80%;
-    }
-    .intro a{
-        position:relative ;
-        top:4em;
-        left:.5em;
-        font-size:20px;
-    }
-    #developer-img{
-        height:30vh;
-        width:auto;
-        position:relative;
-        top:4em;
-        left:8em;
-    }
-    .articles{
-        position:relative;
-        top:10em;
-    }
-    .articles h1{
-        font-size:35px;
-        position:relative;
-        left:-1em;
-    }
-    .articles h3{
-        position:relative;
-        font-size:20px;
-        left:0em;
-        width:70%
-    }
-    .blog{
-        box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
-        width:95%;
-        position:relative ;
-        left:.5em;
-        display:grid;
-        grid-template-columns:100%;
-    }
-    .blog img{
-        width:100%;
-    }
-    .blog-img img{
-        width:100%;
-    }
-    .blog-text{
-        position:relative;
-        left:-11em;
-    }
-        .blog h1{
-        text-align:center;
-        width:90%;
-        font-size:25px;
-        position:relative;
-        top:3em;
-        left:8em;
-    }
-        .blog h3{
-        padding-top:.5em;
-        padding-bottom:.5em;
-        position:relative;
-        left:9em;
-        display:none;
-        width:95%;
-        top:4em;
-        }
-        .blog-footer{
-        display:flex;
-        flex-direction:row;
-        width:100%;
-        position:relative;
-        left:12em;
-        top:5em;
-        }
-        .blog-footer img{
-        width:10%;
-        height:10%;
-        padding-left:5px;
-        padding-bottom:5px;
-        }
-        .blog-footer p{
-        padding-left:1em;
-        font-size:15px;
-        }
-        .blog-footer h4{
-        padding-left:9em;
-        position:relative;
-        left:-5em;
-        width:100%;
-        }
-        .newsletter{
-        position:relative;
-        top:15em;
-        left:0em;
-        }
-        .newsletter h1{
-        color:blue;
-        width:70%;
-        left:-5em;
-        font-size:28px;
-        }
-        .newsletter h3{
-        position:relative;
-        right:-1em;
-        width:70%;
-        font-size:18px;
-        display:flex;
-        justify-content:center;
-        text-align:center;
-        padding-top:3em;
-        font-weight:400;
-        }
-        .email{
-        padding:10px 20px;
-        background-color:#f0f0f5;
-        border:none;
-        position:relative ;
-        left:5.5em;
-        font-size:14px;
-        height:1em;
-        width:40%;
-        top:5em;
-        padding-top:10px;
-        }
-        .btn-2{
-        border:none;
-        background-color:blue;
-        padding:10px 20px;
-        border-radius:4px;
-        color:white;
-        top:9em;
-        font-size:12px;
-        font-weight:500;
-        text-transform:uppercase ;
-        position:relative ;
-        left:-6em;
-        padding-top:10px;
-        }
-        .footer{
-        position:relative ;
-        top:30em;
-        width:100%;
-        background-color:#b3e6ff;
-        height:50vh;
-        }
-        .footer h2{
-        font-size:28px;
-        padding:20px;
-        color:blue;
-        }
-        .footer-icons{
-        display:grid;
-        row-gap:.5em;
-        padding:10px;
-        }
-        .footer-icons a{
-        text-decoration:none;
-        color:black;
-        font-size:20px;
-        }
-        .footer p{
-        width:100%;
-        padding:10px;
-        font-size:16px;
+        left:1em;
     }
 }
 @media(max-width:335px){
-    .intro{
-        width:100%;
-        height:60vh;
-    }
-    #message-img{
-        bottom:8em;
-        left:-10em;
-        height:auto;
-        width:40%
-    }
-    .intro h1{
-        top:2.5em;
-        left:0em;
-        font-size:45px;
-        width:100%;
-    }
-    .intro a{
-        position:relative ;
-        top:3em;
-        left:.5em;
-        font-size:20px;
-    }
-    #developer-img{
-        height:30vh;
-        width:auto;
-        position:relative;
-        top:4em;
-        left:5em;
-    }
-    .newsletter{
-        left:4em;
-    }
-    .newsletter h1{
-        color:blue;
-        width:90%;
-        left:-2em;
-        font-size:38px;
-    }
-    .newsletter h3{
-        left:-2em;
-    }
-    .email{
-        left:0em;
-    }
-    .btn-2{
-        left:-10em;
-    }
+    
 }
 @media(max-width:328px){
-    .intro{
-        width:100%;
-        height:60vh;
-    }
-    #message-img{
-        bottom:8em;
-        left:2em;
-        height:auto;
-        width:40%
-    }
-    .intro h1{
-        top:2.5em;
-        left:0em;
-        font-size:45px;
-        width:100%;
-    }
-    .intro a{
-        position:relative ;
-        top:7em;
-        left:.5em;
-        font-size:20px;
-    }
-    #developer-img{
-        height:30vh;
-        width:auto;
-        position:relative;
-        top:4em;
-        left:5em;
-    }
-    .newsletter{
-        left:4em;
-    }
-    .newsletter h1{
-        color:blue;
-        width:90%;
-        left:-2em;
-        font-size:38px;
-    }
-    .newsletter h3{
-        left:-2em;
-    }
-    .email{
-        left:0em;
-    }
-    .btn-2{
-        left:-10em;
-    }
+    
 }
 @media(max-width:320px){
-    .name{
-        left:-3em;
-    }
-    .home h1{
-        left:1em;
-    }
-    .home h3{
-        left:-10px;
-    }
-    .intro{
-        width:100%;
-        height:60vh;
-    }
-    #message-img{
-        bottom:8em;
-        left:0em;
-        height:auto;
-        width:40%;
-        display:none;
-    }
-    .intro h1{
-        top:-0em;
-        left:0em;
-        font-size:45px;
-        width:80%;
-    }
-    .intro a{
-        position:relative ;
-        top:3em;
-        left:.5em;
-        font-size:16px;
-    }
-    #developer-img{
-        height:30vh;
-        width:auto;
-        position:relative;
-        top:4em;
-        left:5em;
-    }
-    .articles h1{
-        left:-1em;
-    }
-    .articles h3{
-        width:70%;
-    }
-    .blog{
-        height:70vh;
-        width:90%;
-        position:relative;
-        left:15px;
-    }
-    .blog-text h1{
-        left:7.3em;
-        font-size:24px;
-    }
-    .blog-text h3{
-        display:none;
-    }
-    .newsletter{
-        left:4em;
-        top:12em;
-    }
-    .newsletter h1{
-        color:blue;
-        width:90%;
-        left:-2em;
-        font-size:38px;
-    }
-    .newsletter h3{
-        left:-2em;
-        width:70%;
-    }
-    .email{
-        left:0em;
-    }
-    .btn-2{
-        left:-10em;
-    }
-    .footer{
-        width:100%;
-    }
+    
 }
 @media(max-width:295px){
-    .intro{
-        width:100%;
-        height:60vh;
-    }
-    #message-img{
-        bottom:8em;
-        left:-0em;
-        height:auto;
-        width:40%
-    }
-    .intro h1{
-        top:2.5em;
-        left:0em;
-        font-size:35px;
-        width:100%;
-    }
-    .intro a{
-        position:relative ;
-        top:7em;
-        left:.5em;
-        font-size:20px;
-    }
-    #developer-img{
-        height:30vh;
-        width:auto;
-        position:relative;
-        top:4em;
-        left:5em;
-    }
-    .newsletter{
-        left:4em;
-    }
-    .newsletter h1{
-        color:blue;
-        width:90%;
-        left:-2em;
-        font-size:38px;
-    }
-    .newsletter h3{
-        left:-2em;
-    }
-    .email{
-        left:0em;
-    }
-    .btn-2{
-        left:-10em;
-    }
+    
 }
