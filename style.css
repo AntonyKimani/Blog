@@ -10,17 +10,14 @@ width:100%;
 display:flex;
 justify-content:center ;
 color:blue;
-border:1px solid red;
 }
 .nav-menu{
 display:flex;
 justify-content:flex-end;
-border:1px solid red;
 }
 nav ul{
 display:flex;
 flex-direction:row;
-border:1px solid red;
 }
 nav ul li{
 list-style:none;
@@ -51,7 +48,6 @@ width:90%;
 padding:10px;
 font-size:48px;
 text-align:center ;
-border:1px solid red;
 }
 .home h3{
 display:flex;
@@ -88,7 +84,6 @@ background-color:#f0f0f5;
 height:40vh;
 position:relative ;
 top:5em;
-border:1px solid red;
 }
 .intro img{
     height:50vh;
@@ -97,7 +92,6 @@ border:1px solid red;
 }
 #developer-img{
     width:35vw;
-    border:1px solid red;
     position:relative;
     left:25em;
 }
@@ -127,7 +121,6 @@ font-weight:500;
 }
 .articles{
 position:relative ;
-border:1px solid red;
 top:10em;
 }
 .articles h1{
@@ -136,7 +129,6 @@ justify-content:center;
 color:blue;
 width:100%;
 font-size:48px;
-border:1px solid red;
 }
 .articles h3{
 font-weight:400;
@@ -146,7 +138,6 @@ text-align:center;
 padding:10px;
 margin-top:2em;
 width:90%;
-border:1px solid red;
 }
 .blog{
 box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
@@ -154,7 +145,6 @@ width:95%;
 position:relative ;
 left:10px;
 display:grid;
-border:1px solid red;
 grid-template-columns:40% 35%;
 }
 .blog img{
@@ -178,7 +168,6 @@ flex-direction:row;
 width:100%;
 position:relative;
 left:5em;
-border:1px solid red;
 }
 .blog-footer img{
 width:10%;
@@ -187,18 +176,15 @@ padding-bottom:5px;
 }
 .blog-footer p{
 padding-left:1em;
-border:1px solid red;
 font-size:24px;
 }
 .blog-footer h4{
-border:1px solid red;
 position:relative;
 left:25em;
 }
 .newsletter{
 position:relative;
 top:10em;
-border:1px solid red;
 }
 .newsletter h1{
 color:blue;
@@ -226,7 +212,6 @@ height:2em;
 width:50%;
 top:5em;
 padding-top:10px;
-border:1px solid red;
 }
 .btn-2{
 border:none;
@@ -246,7 +231,6 @@ position:relative ;
 top:15em;
 background-color:#b3e6ff;
 height:60vh;
-border:1px solid red;
 }
 .footer h2{
 font-size:48px;
@@ -284,7 +268,6 @@ font-size:36px;
     }
     .intro a{
         font-size:24px;
-        border:1px solid red;
     }
     .articles{
         width:120%;
@@ -347,10 +330,13 @@ font-size:36px;
         left:12em;
     }
     .blog-footer h4{
-        left:6em;
+        left:2em;
     }
 }
 @media(max-width:425px){
+    .body{
+        overflow-x:hidden;
+    }
     .name{
         position:relative;
         left:2em;
@@ -364,7 +350,6 @@ font-size:36px;
         left:11em;
     }
     .intro h1{
-        border:1px solid red;
         width:100%;
         top:0em;
     }
@@ -397,6 +382,9 @@ font-size:36px;
         font-size:24px;
         width:120%;
     }
+    .blog-footer h4{
+        left:2em;
+    }
     .newsletter h3{
         font-size:30px;
     }
@@ -415,6 +403,9 @@ font-size:36px;
     }
 }
 @media(max-width:375px){
+    .body{
+        overflow-x:hidden;
+    }
     .nav-menu{
         display:none;
     }
@@ -430,7 +421,7 @@ font-size:36px;
     left:12.5em;
     }
     .blog-footer h4{
-        left:3em;
+        left:1em;
     }
     .email{
         left:1em;
