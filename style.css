@@ -444,14 +444,22 @@ font-size:36px;
     }
 }
 @media(max-width:335px){
-    
+    .body{
+        overflow-x:hidden;
+    }
 }
 @media(max-width:328px){
-    
+    .body{
+        overflow-x:hidden;
+    }
 }
 @media(max-width:320px){
-    
+    .body{
+        overflow-x:hidden;
+    }
 }
 @media(max-width:295px){
-    
+    .body{
+        overflow-x:hidden;
+    }
 }
